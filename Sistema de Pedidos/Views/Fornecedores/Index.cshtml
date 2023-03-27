@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Fornecedores";
+}
+
+<div class="text-center">
+
+    <div class="text-center">
+        <h1 class="display-4">Listagem de Fornecedores:</h1>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-controller="Fornecedores" asp-action="Criar">Adicionar novo fornecedor</a>
+    </div>
+
+    <br>
+    <br>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Opções</th>
+                <th scope="col">Id do fornecedor:</th>
+                <th scope="col">Razão social:</th>
+                <th scope="col">CNPJ:</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <th>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a role="button" class="btn btn-primary" asp-controller="Fornecedores" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Fornecedores" asp-action="ApagarConfirmacao">Apagar</a>
+                </div>
+            </th>
+            <td>11003131</td>
+            <td>Luis-Emprendimentos</td>
+            <td>000.000.000/0000-00</td>
+        </tr>
+
+        <tr>
+            <th>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a role="button" class="btn btn-primary" asp-controller="Fornecedores" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Fornecedores" asp-action="ApagarConfirmacao">Apagar</a>
+                </div>
+            </th>
+            <td>8662</td>
+            <td>Luc-Corporations</td>
+            <td>000.000.000/0000-00</td>
+        </tr>
+
+        <tr>
+            <th>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a role="button" class="btn btn-primary" asp-controller="Fornecedores" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Fornecedores" asp-action="ApagarConfirmacao">Apagar</a>
+                </div>
+            </th>
+            <td>31004545</td>
+            <td>LucasDComercio</td>
+            <td>000.000.000/0000-00</td>
+        </tr>
+    </table>
+
+</div>
+
+

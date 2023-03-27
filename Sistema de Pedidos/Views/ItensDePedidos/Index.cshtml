@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Itens de Pedidos";
+}
+
+<div class="text-center">
+
+<div class="text-center">
+    <h1 class="display-4">Itens de Pedidos</h1>
+</div>
+
+<br>
+<br>
+
+    <table class="table">
+    <thead>
+            <tr>
+                <th scope="col">Opções</th>
+                <th scope="col">Id item:</th>
+                <th scope="col">Id do pedido:</th>
+                <th scope="col">Id do produto:</th>
+                <th scope="col">Quantidade:</th>
+                <th scope="col">Valor:</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <th>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a role="button" class="btn btn-primary" asp-controller="ItensDePedidos" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="ItensDePedidos" asp-action="ApagarConfirmacao">Apagar</a>
+                </div>
+            </th>
+            <td>1</td>
+            <td>123</td>
+            <td>31310011</td>
+            <td>10 unidades</td>
+            <td>200.00</td>
+        </tr>
+
+        <tr>
+            <th>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a role="button" class="btn btn-primary" asp-controller="ItensDePedidos" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="ItensDePedidos" asp-action="ApagarConfirmacao">Apagar</a>
+                </div>
+            </th>
+            <td>2</td>
+            <td>345</td>
+            <td>21210022</td>
+            <td>2 unidades</td>
+            <td>600.00</td>
+        </tr>
+
+        <tr>
+            <th>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a role="button" class="btn btn-primary" asp-controller="ItensDePedidos" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="ItensDePedidos" asp-action="ApagarConfirmacao">Apagar</a>
+                </div>
+            </th>
+            <td>3</td>
+            <td>678</td>
+            <td>5555000</td>
+            <td>1 unidade</td>
+            <td>1300.00</td>
+        </tr>
+
+    </table>
+
+</div>

@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Pedidos";
+}
+
+<div class="text-center">
+
+    <div class="text-center">
+        <h1 class="display-4">Listagem de Pedidos</h1>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-controller="Pedidos" asp-action="Criar">Adicionar novo Pedido</a>
+    </div>
+
+    <br>
+    <br>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Opções</th>
+                <th scope="col">Id do pedido:</th>
+                <th scope="col">Data do pedido:</th>
+                <th scope="col">Id do fornecedor:</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <th>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a role="button" class="btn btn-primary" asp-controller="Pedidos" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Pedidos" asp-action="ApagarConfirmacao">Apagar</a>
+                </div>
+            </th>
+            <td>123</td>
+            <td>01/04/2023</td>
+            <td>11003131</td>
+        </tr>
+
+        <tr>
+            <th>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a role="button" class="btn btn-primary" asp-controller="Pedidos" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Pedidos" asp-action="ApagarConfirmacao">Apagar</a>
+                </div>
+            </th>
+            <td>345</td>
+            <td>05/04/2023</td>
+            <td>8662</td>
+        </tr>
+
+        <tr>
+            <th>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a role="button" class="btn btn-primary" asp-controller="Pedidos" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Pedidos" asp-action="ApagarConfirmacao">Apagar</a>
+                </div>
+            </th>
+            <td>678</td>
+            <td>15/05/2023</td>
+            <td>31004545</td>
+        </tr>
+
+
+
+
+    </table>
+
+</div>

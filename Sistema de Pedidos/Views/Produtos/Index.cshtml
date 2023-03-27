@@ -1,0 +1,70 @@
+﻿@{
+    ViewData["Title"] = "Produtos";
+}
+
+<div class="text-center">
+
+<div class="text-center">
+    <h1 class="display-4">Listagem de Produtos</h1>
+</div>
+
+    <br>
+    <br>
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-controller="Produtos" asp-action="Criar">Adicionar novo produto</a>
+    </div>
+
+    <br>
+    <br>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">Opções</th>
+                <th scope="col">Id do produto:</th>
+                <th scope="col">Unidade:</th>
+                <th scope="col">Descrição:</th>
+            </tr>
+        </thead>
+
+        <tr>
+            <th>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a role="button" class="btn btn-primary" asp-controller="Produtos" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Produtos" asp-action="ApagarConfirmacao">Apagar</a>
+                </div>
+            </th>
+            <td>31310011</td>
+            <td>10 unidades </d>
+            <td>Cadeira de escritório executiva</td>
+        </tr>
+
+        <tr>
+            <th>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a role="button" class="btn btn-primary" asp-controller="Produtos" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Produtos" asp-action="ApagarConfirmacao">Apagar</a>
+                </div>
+            </th>
+            <td>21210022</td>
+            <td> 2 unidades</td>
+            <td>Mesa de escritório (6 lugares) executiva</td>
+        </tr>
+
+        <tr>
+            <th>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                    <a role="button" class="btn btn-primary" asp-controller="Produtos" asp-action="Editar">Editar</a>
+                    <a role="button" class="btn btn-danger" asp-controller="Produtos" asp-action="ApagarConfirmacao">Apagar</a>
+                </div>
+            </th>
+            <td>5555000</td>
+            <td>1 unidade</td>
+            <td>TV LED 50 POLEGADAS</td>
+        </tr>
+    </table>
+
+    
+
+</div>

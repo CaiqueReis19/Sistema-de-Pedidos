@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Cadastrar Pedido";
+}
+
+<div class="text-center">
+
+    <div class="text-center">
+        <h1 class="display-4">Editar Pedido:</h1>
+    </div>
+</div>
+
+<form>
+
+    <label for="id">Id do pedido:</label>
+    <input type="text" class="form-control" id="id" name="id">
+
+    <label for="id">Data do pedido:</label>
+    <input type="date" class="form-control" id="pedido" name="pedido">
+
+    <label for="id">Id do fornecedor:</label>
+    <input type="text" class="form-control" id="id" name="id">
+
+    <br>
+    <br>
+
+    <button type="submit" class="btn btn-primary">Alterar</button>
+    <a class="btn btn-secondary" asp-controller="Pedidos" asp-action="Index" role="button">Voltar</a>
+
+
+
+</form>
